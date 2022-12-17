@@ -30,6 +30,7 @@ We tried various data augmentation techniques and found that the above set of au
 
 Our Model
 The following picture shows the structure of our model. It has three main flows. The entry, the middle, and the exit flow.
+
 <img width="560" alt="Screen Shot 2022-12-17 at 2 33 26 PM" src="https://user-images.githubusercontent.com/65835990/208268332-832b2218-47ec-461c-92da-b0400f5c12aa.png">
 
 For the entry flow, the input first goes through some basic convolutions, and then it goes into a residual-like block. After that we repeat it, and then come to the middle flow. For middle flow is much easier. Just to do separable convolution several times and add it together with the original input of this flow. Then we repeat it 6 times. For the exit flow, we use a residual block which is similar to the block in entry flow, and then do separable convolution on it twice. Finally we use Global Average Pooling to flatten the output and use fully connected layers to do the final prediction.
