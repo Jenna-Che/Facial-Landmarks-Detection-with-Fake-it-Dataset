@@ -1,6 +1,7 @@
 #Facial Landmarks Detection with Fake-it Dataset
 
 Chen Qiao, Jingwen Che, Haoran Ding
+
 #1. Introduction
 Deep learning neural networks for facial landmarks detection require a sufficient amount of data for the purpose of training and testing. 
 People often use real world photos to train the model. But collecting real world data and labeling them costs a lot. 
@@ -12,6 +13,7 @@ In this project, we will design a deep learning neural network model for facial 
 The training set is drawn from the Microsoft CG dataset (https://github.com/microsoft/FaceSynthetics) containing 100,000 images of synthetic faces at 512*512 pixel resolution. The labels of the training set are 2D landmark coordinates which are also provided alongside the images. The images of the testing set are chosen from Flickr-Faces-HQ (FFHQ) (https://github.com/NVlabs/ffhq-dataset).  FFHQ was originally built as a benchmark  for generative adversarial networks (GAN). It contains 70,000 high-quality images of human faces at 1024×1024 resolution. 
 
 #3. Data preprocessing
+
 Augmentations for faces:
 Random Brightness
 Random Contrast
