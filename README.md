@@ -3,6 +3,7 @@
 Chen Qiao, Jingwen Che, Haoran Ding
 
 #1. Introduction
+
 Deep learning neural networks for facial landmarks detection require a sufficient amount of data for the purpose of training and testing. 
 People often use real world photos to train the model. But collecting real world data and labeling them costs a lot. 
 Can we use synthetic faces to train the model and get a same or even better result? 
@@ -99,6 +100,7 @@ MobileNet-v2
 With our model and dataset size determined, we optimized the hyperparameters, then implemented data mixing during training. Compared with other network architectures with their best fit hyperparameters, our model is still the best–it  gives the lowest training loss, validation loss, and test loss. Even When tested on 30-fps videos, our model gives  excellent results (https://youtu.be/8jq60Haj4z4).
 
 #7. Reference
+
 Erroll Wood, Tadas Baltrusaitis, Charlie Hewitt, Sebastian Dziadzio, Thomas J. Cashman, Jamie Shotton.: Fake it till you make it: face analysis in the wild using synthetic data alone. International Conference on Computer Vision 2021.https://openaccess.thecvf.com/content/ICCV2021/html/Wood_Fake_It_Till_You_Make_It_Face_Analysis_in_the_ICCV_2021_paper.html
 
 ChihFan Hsu, ChiaChing Lin, TingYang Hung, ChinLaung Lei, KuanTa Chen: Annotated Facial Landmarks in the Wild: A large-scale, real-world database for facial landmark localization. arXiv:2005.08649.
