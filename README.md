@@ -53,14 +53,15 @@ When trying to determine the minimum viable training set, we found that a size o
 ![ValLoss](https://user-images.githubusercontent.com/66711588/208271110-da765a56-4905-4947-be65-93f4fa7b6323.png)
 
 With our model and dataset size determined, we optimized the hyperparameters, then implemented data mixing during training. Compared with other network architectures with their best fit hyperparameters, our model is still the best–it  gives the lowest training loss, validation loss, and test loss. Even When tested on 30-fps videos, our model gives  excellent results (https://youtu.be/8jq60Haj4z4).
-
+###   7. Sample
+<img width="459" alt="result-pic" src="https://user-images.githubusercontent.com/66711588/208271733-45c20c25-055b-4c5b-80d1-7c1a78960a96.png">
 
 
 https://user-images.githubusercontent.com/66711588/208271227-439a3565-0bfa-4751-a03a-b1789aefbb21.mp4
 
 
 
-###    7. Reference
+### 8. Reference
 *   Erroll Wood, Tadas Baltrusaitis, Charlie Hewitt, Sebastian Dziadzio, Thomas J. Cashman, Jamie Shotton.: Fake it till you make it: face analysis in the wild using synthetic data alone. International Conference on Computer Vision 2021.https://openaccess.thecvf.com/content/ICCV2021/html/Wood_Fake_It_Till_You_Make_It_Face_Analysis_in_the_ICCV_2021_paper.html
 
 * ChihFan Hsu, ChiaChing Lin, TingYang Hung, ChinLaung Lei, KuanTa Chen: Annotated Facial Landmarks in the Wild: A large-scale, real-world database for facial landmark localization. arXiv:2005.08649. https://arxiv.org/abs/2005.08649
