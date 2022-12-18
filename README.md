@@ -35,6 +35,7 @@ Deep learning neural networks for facial landmarks detection require a sufficien
 | Xception     | 0.00091584     | <font class="text-color-7" color="#03a9f4">0.00010563 </font>    | 0.00003259     |
 | ResNet50     | 0.00120577     | <font class="text-color-7" color="#03a9f4">0.00018337 </font>    | 0.00007236     |
 | MobileNet-v2     | 0.00045519     | <font class="text-color-7" color="#03a9f4">0.00023415</font>     | 0.00006439     |
+
 When trying to determine the minimum viable training set, we found that a size of 5000 gave a reasonable training time with an acceptable loss.
 ###   6. Result
     
@@ -46,9 +47,16 @@ When trying to determine the minimum viable training set, we found that a size o
 | Xception     | 0.00083827     | 0.00002770    | 0.00287737     |
 | ResNet50     | 0.00187827     | 0.00046778    | 0.00385637     |
 | MobileNet-v2     | 0.00116653     | 0.00011362     | 0.00336023     |
+
 ![My Image][TrainLoss.png]
 ![My Image][ValLoss.png]
+
 With our model and dataset size determined, we optimized the hyperparameters, then implemented data mixing during training. Compared with other network architectures with their best fit hyperparameters, our model is still the best–it  gives the lowest training loss, validation loss, and test loss. Even When tested on 30-fps videos, our model gives  excellent results (https://youtu.be/8jq60Haj4z4).
 
 ###    7. Reference
 *   Erroll Wood, Tadas Baltrusaitis, Charlie Hewitt, Sebastian Dziadzio, Thomas J. Cashman, Jamie Shotton.: Fake it till you make it: face analysis in the wild using synthetic data alone. International Conference on Computer Vision 2021.https://openaccess.thecvf.com/content/ICCV2021/html/Wood_Fake_It_Till_You_Make_It_Face_Analysis_in_the_ICCV_2021_paper.html
+
+* ChihFan Hsu, ChiaChing Lin, TingYang Hung, ChinLaung Lei, KuanTa Chen: Annotated Facial Landmarks in the Wild: A large-scale, real-world database for facial landmark localization. arXiv:2005.08649. https://arxiv.org/abs/2005.08649
+
+* Face Landmarks Detection
+https://github.com/braindotai/Facial-Landmarks-Detection-Pytorch
