@@ -2,7 +2,7 @@
 
 ###### <center> *Chen Qiao, Jingwen Che, Haoran Ding*
 ###### Our Colab notebook contains the training results: https://drive.google.com/file/d/1fOizWMe8WX644XYk9Wbkj9s7UAtTiu-Y/view?usp=share_link  
-###### Some parts of the code are referred to https://github.com/braindotai/Facial-Landmarks-Detection-Pytorch
+###### Some parts of the code refers to https://github.com/braindotai/Facial-Landmarks-Detection-Pytorch
 ### 1. Introduction
 Deep learning neural networks for facial landmarks detection require a sufficient amount of data for the purpose of training and testing. People often use real world photos to train the model. But collecting real world data and labeling them costs a lot. Can we use synthetic faces to train the model and get a same or even better result? In this project, we will design a deep learning neural network model for facial landmarks detection and train it on the CG dataset, then test it on the real world samples.
 ### 2. Dataset
