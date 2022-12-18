@@ -19,7 +19,8 @@ Deep learning neural networks for facial landmarks detection require a sufficien
 ###    4. Models
 *    Our Model
  The following picture shows the structure of our model. It has three main flows. The entry, the middle, and the exit flow.
-![My Image][Xception_pic.png]
+![Xception_pic](https://user-images.githubusercontent.com/66711588/208271100-3ac8f51f-3346-439d-a4d3-d44db623ce04.png)
+
 **For the entry flow**, the input first goes through some basic convolutions, and then it goes into a residual-like block. After that we repeat it, and then come to the middle flow. **For middle flow** is much easier. Just to do separable convolution several times and add it together with the original input of this flow. Then we repeat it 6 times. **For the exit flow**, we use a residual block which is similar to the block in entry flow, and then do separable convolution on it twice. Finally we use Global Average Pooling to flatten the output and use fully connected layers to do the final prediction.
 * Other Network Architectures
  For the purpose of comparison, we also implemented some other popular network architectures.
@@ -48,8 +49,8 @@ When trying to determine the minimum viable training set, we found that a size o
 | ResNet50     | 0.00187827     | 0.00046778    | 0.00385637     |
 | MobileNet-v2     | 0.00116653     | 0.00011362     | 0.00336023     |
 
-![My Image][TrainLoss.png]
-![My Image][ValLoss.png]
+![TrainLoss](https://user-images.githubusercontent.com/66711588/208271108-0253445e-b1c6-4a43-b11d-e7eb856d4472.png)
+![ValLoss](https://user-images.githubusercontent.com/66711588/208271110-da765a56-4905-4947-be65-93f4fa7b6323.png)
 
 With our model and dataset size determined, we optimized the hyperparameters, then implemented data mixing during training. Compared with other network architectures with their best fit hyperparameters, our model is still the best–it  gives the lowest training loss, validation loss, and test loss. Even When tested on 30-fps videos, our model gives  excellent results (https://youtu.be/8jq60Haj4z4).
 
