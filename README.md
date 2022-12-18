@@ -53,7 +53,7 @@ When trying to determine the minimum viable training set, we found that a size o
 ![ValLoss](https://user-images.githubusercontent.com/66711588/208271110-da765a56-4905-4947-be65-93f4fa7b6323.png)
 
 With our model and dataset size determined, we optimized the hyperparameters, then implemented data mixing during training. Compared with other network architectures with their best fit hyperparameters, our model is still the best–it  gives the lowest training loss, validation loss, and test loss. Even When tested on 30-fps videos, our model gives  excellent results (https://youtu.be/8jq60Haj4z4).
-###   7. Sample
+###   7. Test Results on Real World Faces
 <img width="459" alt="result-pic" src="https://user-images.githubusercontent.com/66711588/208271733-45c20c25-055b-4c5b-80d1-7c1a78960a96.png">
 
 
