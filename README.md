@@ -1,6 +1,6 @@
 ## Facial Landmarks Detection with Fake-it Dataset
 
-###### <center>*Chen Qiao, Jingwen Che, Haoran Ding*
+###### <center> *Chen Qiao, Jingwen Che, Haoran Ding*
 ### 1. Introduction
 Deep learning neural networks for facial landmarks detection require a sufficient amount of data for the purpose of training and testing. People often use real world photos to train the model. But collecting real world data and labeling them costs a lot. Can we use synthetic faces to train the model and get a same or even better result? In this project, we will design a deep learning neural network model for facial landmarks detection and train it on the CG dataset, then test it on the real world samples.
 ### 2. Dataset
@@ -21,7 +21,7 @@ Deep learning neural networks for facial landmarks detection require a sufficien
  The following picture shows the structure of our model. It has three main flows. The entry, the middle, and the exit flow.
 ![Xception_pic](https://user-images.githubusercontent.com/66711588/208271100-3ac8f51f-3346-439d-a4d3-d44db623ce04.png)
 
-  &ensp **For the entry flow**, the input first goes through some basic convolutions, and then it goes into a residual-like block. After that we repeat it, and then come to     the middle flow. **For middle flow** is much easier. Just to do separable convolution several times and add it together with the original input of this flow. Then     we repeat it 6 times. **For the exit flow**, we use a residual block which is similar to the block in entry flow, and then do separable convolution on it twice.       Finally we use Global Average Pooling to flatten the output and use fully connected layers to do the final prediction.
+  >**For the entry flow**, the input first goes through some basic convolutions, and then it goes into a residual-like block. After that we repeat it, and then come to     the middle flow. **For middle flow** is much easier. Just to do separable convolution several times and add it together with the original input of this flow. Then     we repeat it 6 times. **For the exit flow**, we use a residual block which is similar to the block in entry flow, and then do separable convolution on it twice.       Finally we use Global Average Pooling to flatten the output and use fully connected layers to do the final prediction.
 * Other Network Architectures
  For the purpose of comparison, we also implemented some other popular network architectures.
 1. **Xception** stands for Extreme version of Inception. The essence of the model is to assume that cross-channel correlations and spatial correlations can be mapped completely separately.
