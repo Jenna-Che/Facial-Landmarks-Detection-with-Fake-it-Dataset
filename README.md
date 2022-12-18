@@ -38,7 +38,7 @@ Deep learning neural networks for facial landmarks detection require a sufficien
 | MobileNet-v2     | 0.00045519     | <font class="text-color-7" color="#03a9f4">0.00023415</font>     | 0.00006439     |
 
 When trying to determine the minimum viable training set, we found that a size of 5000 gave a reasonable training time with an acceptable loss.
-###   6. Result
+###   6. Quantified Results
     
 
 |  MSE Loss  | Training loss | Validation Loss | Test Loss |
