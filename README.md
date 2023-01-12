@@ -1,6 +1,6 @@
 ## Facial Landmarks Detection with Fake-it Dataset
 
-###### <center> *Chen Qiao, Jingwen Che, Haoran Ding*
+###### <center> *Jingwen Che, Chen Qiao, Haoran Ding*
 ###### Our Colab notebook contains the training results: https://drive.google.com/file/d/1fOizWMe8WX644XYk9Wbkj9s7UAtTiu-Y/view?usp=share_link  
 ###### Some parts of the code refer to https://github.com/braindotai/Facial-Landmarks-Detection-Pytorch
 ### 1. Introduction
